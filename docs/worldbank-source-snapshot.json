@@ -1,0 +1,50 @@
+[
+  {
+    "id": "aus",
+    "name": "Australia",
+    "value": 7741220,
+    "year": "2024"
+  },
+  {
+    "id": "bra",
+    "name": "Brazil",
+    "value": 8510420,
+    "year": "2024"
+  },
+  {
+    "id": "can",
+    "name": "Canada",
+    "value": 15634410,
+    "year": "2024"
+  },
+  {
+    "id": "deu",
+    "name": "Germany",
+    "value": 357680,
+    "year": "2024"
+  },
+  {
+    "id": "ind",
+    "name": "India",
+    "value": 3287263,
+    "year": "2024"
+  },
+  {
+    "id": "jpn",
+    "name": "Japan",
+    "value": 377974.71,
+    "year": "2024"
+  },
+  {
+    "id": "kor",
+    "name": "Korea, Rep.",
+    "value": 100460,
+    "year": "2024"
+  },
+  {
+    "id": "usa",
+    "name": "United States",
+    "value": 9831510,
+    "year": "2024"
+  }
+]
