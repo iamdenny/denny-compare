@@ -1,8 +1,27 @@
+import { t, locale, country, preset } from "./i18n.js";
 import { categories, measures } from "./data.js";
 const $ = (s) => document.querySelector(s);
+const countryCodes = {
+  kor: "KR",
+  jpn: "JP",
+  deu: "DE",
+  ind: "IN",
+  aus: "AU",
+  bra: "BR",
+  usa: "US",
+};
+for (const c of Object.values(categories)) {
+  c.dimension = t(c.dimension);
+  c.note = t(c.note);
+  c.items = c.items.map((x) => [
+    x[0],
+    countryCodes[x[0]] ? country(countryCodes[x[0]], x[1]) : t(x[1]),
+    x[2],
+  ]);
+}
 let category = "area",
   svg = "";
-const fmt = (n) => n.toLocaleString("en", { maximumFractionDigits: 3 });
+const fmt = (n) => n.toLocaleString(locale, { maximumFractionDigits: 3 });
 const esc = (s) =>
   String(s)
     .replaceAll("&", "&amp;")
@@ -27,8 +46,10 @@ function setup(c) {
   $("#first").value = c === "space" ? "earth" : categories[c].items[0][0];
   $("#second").value = c === "space" ? "jupiter" : categories[c].items[1][0];
   $("#custom").value = "";
-  $("#unit-help").textContent =
-    "Unit: " + categories[c].unit + ". Leave blank to use the selected object.";
+  $("#unit-help").textContent = t(
+    "Unit: {unit}. Leave blank to use the selected object.",
+    { unit: categories[c].unit },
+  );
 }
 function draw() {
   try {
@@ -37,10 +58,10 @@ function draw() {
       preset = c.items.find((i) => i[0] === $("#second").value),
       b =
         $("#custom").value !== ""
-          ? ["custom", "Custom reference", Number($("#custom").value)]
+          ? ["custom", t("Custom reference"), Number($("#custom").value)]
           : preset;
     if (b[2] > 1e9 || b[2] < 0.001)
-      throw Error("Custom values must be between 0.001 and 1,000,000,000.");
+      throw Error(t("Custom values must be between 0.001 and 1,000,000,000."));
     const m = measures(a[2], b[2], category),
       overlay = $("#layout").value === "overlay",
       size = 235;
@@ -56,21 +77,32 @@ function draw() {
           : `<rect x="${category === "height" ? (overlay ? 260 + i * 20 : i ? 410 : 120) : x}" y="${y}" width="${category === "height" ? 60 : dim}" height="${dim}" fill="${color}" fill-opacity=".72" stroke="${color}"/>`;
       })
       .join("");
-    const title = `${a[1]} and ${b[1]}: ${c.dimension} comparison`;
-    svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 410" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title><line x1="20" y1="291" x2="580" y2="291" stroke="#9bafa5"/>${shapes}<text x="155" y="325" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="15">${esc(a[1])}</text><text x="445" y="325" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="15">${esc(b[1])}</text><text x="155" y="350" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="14">${fmt(a[2])} ${c.unit}</text><text x="445" y="350" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="14">${fmt(b[2])} ${c.unit}</text><text x="300" y="390" text-anchor="middle" fill="#61645e" font-family="sans-serif" font-size="12">${esc(c.dimension)} · Simplified shapes · compare.iamdenny.com</text></svg>`;
+    const title = t("{a} and {b}: {dimension} comparison", {
+      a: a[1],
+      b: b[1],
+      dimension: c.dimension,
+    });
+    svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 410" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title><line x1="20" y1="291" x2="580" y2="291" stroke="#9bafa5"/>${shapes}<text x="155" y="325" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="15">${esc(a[1])}</text><text x="445" y="325" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="15">${esc(b[1])}</text><text x="155" y="350" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="14">${fmt(a[2])} ${c.unit}</text><text x="445" y="350" text-anchor="middle" fill="#252821" font-family="sans-serif" font-size="14">${fmt(b[2])} ${c.unit}</text><text x="300" y="390" text-anchor="middle" fill="#61645e" font-family="sans-serif" font-size="12">${esc(c.dimension)} · ${t("Simplified shapes")} · compare.iamdenny.com</text></svg>`;
     $("#stage").innerHTML = svg;
     $("#legend").innerHTML =
       `<span><b style="background:#167466"></b>${esc(a[1])} · ${fmt(a[2])} ${c.unit}</span><span><b style="background:#cc7047"></b>${esc(b[1])} · ${fmt(b[2])} ${c.unit}</span>`;
     $("#ratio").textContent =
       (m.ratio < 0.001 ? m.ratio.toExponential(2) : fmt(m.ratio)) + "×";
-    $("#summary").textContent =
-      `${a[1]} has ${m.ratio < 0.001 ? m.ratio.toExponential(2) : fmt(m.ratio)} times the ${c.dimension} of ${b[1]}.`;
+    $("#summary").textContent = t(
+      "{a} has {ratio} times the {dimension} of {b}.",
+      {
+        a: a[1],
+        b: b[1],
+        ratio: m.ratio < 0.001 ? m.ratio.toExponential(2) : fmt(m.ratio),
+        dimension: c.dimension,
+      },
+    );
     $("#method").textContent = c.note;
     $("#status").textContent = "";
     $("#download").disabled = false;
     return true;
   } catch (e) {
-    $("#status").textContent = e.message;
+    $("#status").textContent = t(e.message);
     $("#download").disabled = true;
     return false;
   }
@@ -89,8 +121,9 @@ for (const id of ["first", "second", "layout"])
   $("#" + id).addEventListener("change", draw);
 $("#swap").addEventListener("click", () => {
   if ($("#custom").value) {
-    $("#status").textContent =
-      "Clear the custom value to swap the preset objects.";
+    $("#status").textContent = t(
+      "Clear the custom value to swap the preset objects.",
+    );
     return;
   }
   const a = $("#first").value;
@@ -110,9 +143,9 @@ $("#share").addEventListener("click", async () => {
   }).toString();
   try {
     await navigator.clipboard.writeText(url.href);
-    $("#status").textContent = "Comparison link copied.";
+    $("#status").textContent = t("Comparison link copied.");
   } catch {
-    $("#status").textContent = "Copy this link: " + url.href;
+    $("#status").textContent = t("Copy this link: ") + url.href;
   }
 });
 $("#download").addEventListener("click", () => {
@@ -125,7 +158,9 @@ $("#download").addEventListener("click", () => {
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
-const params = new URLSearchParams(location.hash.slice(1));
+const params = new URLSearchParams(preset);
+for (const [key, value] of new URLSearchParams(location.hash.slice(1)))
+  params.set(key, value);
 setup(
   Object.hasOwn(categories, params.get("category"))
     ? params.get("category")
