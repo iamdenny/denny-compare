@@ -1,0 +1,42 @@
+[
+  {
+    "path": "south-korea-vs-japan-area",
+    "title": "South Korea vs Japan: surface area comparison",
+    "description": "Compare South Korea and Japan using equal-area squares and World Bank data.",
+    "answer": "Using World Bank 2024 surface-area observations, South Korea is 100,460 km² and Japan is 377,974.71 km². Japan has about 3.76 times South Korea’s surface area.",
+    "how": "Divide 377,974.71 by 100,460 to calculate the area ratio. The visualization uses squares with sides proportional to the square root of area, so the visual areas match the measured ratio.",
+    "detail": "Surface area includes inland water. These are simplified equal-area squares, not country outlines or a map projection. Territorial definitions and data revisions can affect comparisons. Source: <a href=\"https://data.worldbank.org/indicator/AG.SRF.TOTL.K2\">World Bank surface-area indicator</a>, 2024 observations retrieved 22 October 2026.",
+    "cta": "/#category=area&first=kor&second=jpn",
+    "action": "Compare the areas"
+  },
+  {
+    "path": "earth-vs-jupiter-size",
+    "title": "Earth vs Jupiter: diameter comparison",
+    "description": "See Earth and Jupiter at the same equatorial-diameter scale.",
+    "answer": "The NASA Planetary Fact Sheet lists Earth’s equatorial diameter as 12,756 km and Jupiter’s as 142,984 km. Jupiter is about 11.21 times as wide by this measure.",
+    "how": "Divide Jupiter’s diameter by Earth’s diameter to find the linear ratio. Circle diameters in the visualization use that ratio directly. Switch to overlay mode to see both circles in the same space.",
+    "detail": "A diameter ratio is not a volume ratio. This view does not show orbital distances or atmospheric detail. Values are rounded reference measurements and can differ from newer estimates or mean-diameter figures. Source: <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/\">NASA Planetary Fact Sheet</a>.",
+    "cta": "/#category=space&first=earth&second=jupiter",
+    "action": "Compare the planets"
+  },
+  {
+    "path": "eiffel-tower-vs-burj-khalifa",
+    "title": "Eiffel Tower vs Burj Khalifa: height comparison",
+    "description": "Compare published Eiffel Tower and Burj Khalifa heights.",
+    "answer": "The Eiffel Tower’s published height is 330 m, including its antenna. Burj Khalifa’s architectural height is 828 m, about 2.51 times as high.",
+    "how": "Divide 828 by 330 to calculate the ratio. This comparison uses vertical bars, with height proportional to the stated measurement. You can add a custom height in meters to make the scale more familiar.",
+    "detail": "The measurement definitions differ: one includes an antenna and the other is architectural height. This is a comparison of stated heights, not a ranking under one uniform skyscraper definition. Sources: <a href=\"https://www.toureiffel.paris/en/the-monument/key-figures\">Eiffel Tower</a> and <a href=\"https://www.skyscrapercenter.com/building/burj-khalifa/3\">CTBUH</a>.",
+    "cta": "/#category=height&first=eiffel&second=burj",
+    "action": "Compare the heights"
+  },
+  {
+    "path": "how-size-comparison-works",
+    "title": "How to compare area, height and diameter honestly",
+    "description": "Understand linear scale, square-root area scale and what a visual comparison means.",
+    "answer": "For lengths and diameters, scale shapes by the value ratio. For equal-area squares, scale side lengths by the square root of the area ratio.",
+    "how": "If one country has four times another country’s area, its equal-area square should have twice the side length. Making it four times as wide would incorrectly display sixteen times the area.",
+    "detail": "Compare like units and keep the measurement definition visible. Height, diameter, area and volume answer different questions. A custom value is a user-provided reference, not a verified measurement. Small shapes can be hard to see at a shared scale, so always consult the text values too.",
+    "cta": "/",
+    "action": "Explore a comparison"
+  }
+]
