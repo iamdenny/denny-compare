@@ -50,7 +50,7 @@ const itemName = (item, lang) =>
         countryCodes[item[0]],
       )
     : trans(lang)(item[1]);
-const fmt = (n, lang) => n.toLocaleString(lang, { maximumFractionDigits: 3 });
+const fmt = (n, lang) => n.toLocaleString(lang, { maximumSignificantDigits: 8 });
 const printHow =
   "Choose a title and 1–12 sheets. Each sheet uses the next edition number. Print the puzzle first, then reveal the answers for a separate teaching copy.";
 const bingoHow =
@@ -154,7 +154,7 @@ function catalog(lang) {
                 "Choose another pair, swap objects or enter a custom reference. Shared links preserve your settings; SVG downloads preserve the labels and exact values.",
               ),
             preset: { category, first: a[0], second: b[0] },
-            body: `<h2>${t("Measurement")}: ${t(c.dimension)}</h2><table class="data-table"><thead><tr><th>${t("First object")}</th><th>${t("Value")}</th></tr></thead><tbody>${[a, b].map((x) => `<tr><th>${esc(itemName(x, lang))}</th><td>${fmt(x[2], lang)} ${c.unit}</td></tr>`).join("")}</tbody></table><p>${fmt(a[2], lang)} ÷ ${fmt(b[2], lang)} ≈ ${ratioText}</p><h2>${t("Sources & method")}</h2><p>${t(c.note)}</p><p>${t(ratioHow)}</p><p><a href="${c.source}">${category === "area" ? "World Bank · 2024" : category === "space" ? "NASA Planetary Fact Sheet" : "Eiffel Tower"}</a>${category === "height" ? ' · <a href="https://www.skyscrapercenter.com/building/burj-khalifa/3">CTBUH · Burj Khalifa</a>' : ""}</p><p>${t(compareHow)}</p>`,
+            body: `<h2>${t("Measurement")}: ${t(c.dimension)}</h2><table class="data-table"><thead><tr><th>${t("First object")}</th><th>${t("Value")}</th></tr></thead><tbody>${[a, b].map((x) => `<tr><th>${esc(itemName(x, lang))}</th><td>${fmt(x[2], lang)} ${c.unit}</td></tr>`).join("")}</tbody></table><p>${fmt(a[2], lang)} ÷ ${fmt(b[2], lang)} ≈ ${ratioText}</p><h2>${t("Sources & method")}</h2><p>${t(c.note)}</p><p>${t(ratioHow)}</p><p><a href="${c.source}">${c.sourceLabel || (category === "area" ? "World Bank · 2024" : category === "space" ? "NASA Planetary Fact Sheet" : "Eiffel Tower")}</a>${category === "height" ? ' · <a href="https://www.skyscrapercenter.com/building/burj-khalifa/3">CTBUH · Burj Khalifa</a>' : ""}</p><p>${t(compareHow)}</p>`,
           });
         }
   return out;

@@ -763,13 +763,13 @@
   },
   "{a} and {b}: {dimension} comparison": {
     "en": "{a} and {b}: {dimension} comparison",
-    "ko": "{a}와 {b}: {dimension} 비교",
+    "ko": "{a} / {b}: {dimension} 비교",
     "ja": "{a}と{b}: {dimension}の比較",
     "es": "{a} y {b}: comparación de {dimension}"
   },
   "{a} has {ratio} times the {dimension} of {b}.": {
     "en": "{a} has {ratio} times the {dimension} of {b}.",
-    "ko": "{a}의 {dimension}는 {b}의 {ratio}배입니다.",
+    "ko": "{dimension} 비교: {a} ÷ {b} = {ratio}배입니다.",
     "ja": "{a}の{dimension}は{b}の{ratio}倍です。",
     "es": "La medida de {dimension} de {a} es {ratio} veces la de {b}."
   },
@@ -1150,5 +1150,107 @@
     "ko": "같은 제작자의 다른 서비스",
     "ja": "同じ開発者のサービス",
     "es": "Más del mismo creador"
+  },
+  "Length units": {
+    "en": "Length units",
+    "ko": "길이 단위",
+    "ja": "長さの単位",
+    "es": "Unidades de longitud"
+  },
+  "Mass units": {
+    "en": "Mass units",
+    "ko": "질량 단위",
+    "ja": "質量の単位",
+    "es": "Unidades de masa"
+  },
+  "Time units": {
+    "en": "Time units",
+    "ko": "시간 단위",
+    "ja": "時間の単位",
+    "es": "Unidades de tiempo"
+  },
+  "Volume units": {
+    "en": "Volume units",
+    "ko": "부피 단위",
+    "ja": "体積の単位",
+    "es": "Unidades de volumen"
+  },
+  "length": {
+    "en": "length",
+    "ko": "길이",
+    "ja": "長さ",
+    "es": "longitud"
+  },
+  "mass": {
+    "en": "mass",
+    "ko": "질량",
+    "ja": "質量",
+    "es": "masa"
+  },
+  "duration": {
+    "en": "duration",
+    "ko": "시간",
+    "ja": "時間",
+    "es": "duración"
+  },
+  "volume": {
+    "en": "volume",
+    "ko": "부피",
+    "ja": "体積",
+    "es": "volumen"
+  },
+  "Bars compare exact metric lengths in metres; they are not area comparisons.": {
+    "en": "Bars compare exact metric lengths in metres; they are not area comparisons.",
+    "ko": "막대는 미터로 환산한 정확한 길이를 비교합니다. 면적 비교가 아닙니다.",
+    "ja": "棒はメートルに換算した正確な長さを比較します。面積ではありません。",
+    "es": "Las barras comparan longitudes exactas en metros, no superficies."
+  },
+  "Bars compare mass in grams, not the physical sizes of objects. Metric prefixes are exact powers of ten.": {
+    "en": "Bars compare mass in grams, not the physical sizes of objects. Metric prefixes are exact powers of ten.",
+    "ko": "막대는 물체의 크기가 아닌 그램 단위 질량을 비교합니다. SI 접두어는 정확한 10의 거듭제곱입니다.",
+    "ja": "棒は物体の大きさではなくグラム単位の質量を比較します。SI接頭語は正確な10の累乗です。",
+    "es": "Las barras comparan masas en gramos, no tamaños físicos. Los prefijos métricos son potencias exactas de diez."
+  },
+  "Bars compare elapsed durations. A day means exactly 24 hours and a week means seven such days, not a calendar interval across clock changes.": {
+    "en": "Bars compare elapsed durations. A day means exactly 24 hours and a week means seven such days, not a calendar interval across clock changes.",
+    "ko": "막대는 경과 시간을 비교합니다. 하루는 정확히 24시간, 일주일은 7일로 계산하며 시계 변경이 있는 달력상의 기간과 구분합니다.",
+    "ja": "経過時間を比較します。1日は正確に24時間、1週間は7日とし、時計変更をまたぐ暦の期間とは区別します。",
+    "es": "Se comparan duraciones: un día equivale a 24 horas y una semana a siete días, sin cambios de hora del calendario."
+  },
+  "Bars compare volume in litres, not container silhouettes. One litre equals one cubic decimetre.": {
+    "en": "Bars compare volume in litres, not container silhouettes. One litre equals one cubic decimetre.",
+    "ko": "막대는 용기 모양이 아닌 리터 단위 부피를 비교합니다. 1리터는 1세제곱데시미터입니다.",
+    "ja": "棒は容器の形ではなくリットル単位の体積を比較します。1リットルは1立方デシメートルです。",
+    "es": "Las barras comparan volúmenes en litros, no siluetas. Un litro equivale a un decímetro cúbico."
+  },
+  "1 second": {
+    "en": "1 second",
+    "ko": "1초",
+    "ja": "1秒",
+    "es": "1 segundo"
+  },
+  "1 minute": {
+    "en": "1 minute",
+    "ko": "1분",
+    "ja": "1分",
+    "es": "1 minuto"
+  },
+  "1 hour": {
+    "en": "1 hour",
+    "ko": "1시간",
+    "ja": "1時間",
+    "es": "1 hora"
+  },
+  "1 day": {
+    "en": "1 day",
+    "ko": "1일",
+    "ja": "1日",
+    "es": "1 día"
+  },
+  "1 week": {
+    "en": "1 week",
+    "ko": "1주",
+    "ja": "1週間",
+    "es": "1 semana"
   }
 }

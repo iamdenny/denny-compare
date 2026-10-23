@@ -21,7 +21,7 @@ for (const c of Object.values(categories)) {
 }
 let category = "area",
   svg = "";
-const fmt = (n) => n.toLocaleString(locale, { maximumFractionDigits: 3 });
+const fmt = (n) => n.toLocaleString(locale, { maximumSignificantDigits: 8 });
 const esc = (s) =>
   String(s)
     .replaceAll("&", "&amp;")
@@ -74,7 +74,7 @@ function draw() {
           color = i ? "#cc7047" : "#167466";
         return category === "space"
           ? `<circle cx="${x + dim / 2}" cy="${y + dim / 2}" r="${dim / 2}" fill="${color}" fill-opacity=".72" stroke="${color}"/>`
-          : `<rect x="${category === "height" ? (overlay ? 260 + i * 20 : i ? 410 : 120) : x}" y="${y}" width="${category === "height" ? 60 : dim}" height="${dim}" fill="${color}" fill-opacity=".72" stroke="${color}"/>`;
+          : `<rect x="${category !== "area" && category !== "space" ? (overlay ? 260 + i * 20 : i ? 410 : 120) : x}" y="${y}" width="${category !== "area" && category !== "space" ? 60 : dim}" height="${dim}" fill="${color}" fill-opacity=".72" stroke="${color}"/>`;
       })
       .join("");
     const title = t("{a} and {b}: {dimension} comparison", {

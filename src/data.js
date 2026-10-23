@@ -46,6 +46,158 @@ export const categories = {
     ],
   },
 };
+Object.assign(categories, {
+  "length": {
+    "label": "Length units",
+    "unit": "m",
+    "dimension": "length",
+    "items": [
+      [
+        "mm",
+        "1 mm",
+        0.001
+      ],
+      [
+        "cm",
+        "1 cm",
+        0.01
+      ],
+      [
+        "dm",
+        "1 dm",
+        0.1
+      ],
+      [
+        "m",
+        "1 m",
+        1
+      ],
+      [
+        "dam",
+        "1 dam",
+        10
+      ],
+      [
+        "km",
+        "1 km",
+        1000
+      ]
+    ],
+    "note": "Bars compare exact metric lengths in metres; they are not area comparisons.",
+    "source": "https://www.bipm.org/en/publications/si-brochure",
+    "sourceLabel": "BIPM · SI Brochure"
+  },
+  "mass": {
+    "label": "Mass units",
+    "unit": "g",
+    "dimension": "mass",
+    "items": [
+      [
+        "mg",
+        "1 mg",
+        0.001
+      ],
+      [
+        "cg",
+        "1 cg",
+        0.01
+      ],
+      [
+        "dg",
+        "1 dg",
+        0.1
+      ],
+      [
+        "g",
+        "1 g",
+        1
+      ],
+      [
+        "hg",
+        "1 hg",
+        100
+      ],
+      [
+        "kg",
+        "1 kg",
+        1000
+      ]
+    ],
+    "note": "Bars compare mass in grams, not the physical sizes of objects. Metric prefixes are exact powers of ten.",
+    "source": "https://www.bipm.org/en/publications/si-brochure",
+    "sourceLabel": "BIPM · SI Brochure"
+  },
+  "duration": {
+    "label": "Time units",
+    "unit": "s",
+    "dimension": "duration",
+    "items": [
+      [
+        "second",
+        "1 second",
+        1
+      ],
+      [
+        "minute",
+        "1 minute",
+        60
+      ],
+      [
+        "hour",
+        "1 hour",
+        3600
+      ],
+      [
+        "day",
+        "1 day",
+        86400
+      ],
+      [
+        "week",
+        "1 week",
+        604800
+      ]
+    ],
+    "note": "Bars compare elapsed durations. A day means exactly 24 hours and a week means seven such days, not a calendar interval across clock changes.",
+    "source": "https://www.bipm.org/en/publications/si-brochure",
+    "sourceLabel": "BIPM · SI Brochure"
+  },
+  "volume": {
+    "label": "Volume units",
+    "unit": "L",
+    "dimension": "volume",
+    "items": [
+      [
+        "ml",
+        "1 mL",
+        0.001
+      ],
+      [
+        "cl",
+        "1 cL",
+        0.01
+      ],
+      [
+        "dl",
+        "1 dL",
+        0.1
+      ],
+      [
+        "l",
+        "1 L",
+        1
+      ],
+      [
+        "kl",
+        "1 kL",
+        1000
+      ]
+    ],
+    "note": "Bars compare volume in litres, not container silhouettes. One litre equals one cubic decimetre.",
+    "source": "https://www.bipm.org/en/publications/si-brochure",
+    "sourceLabel": "BIPM · SI Brochure"
+  }
+});
 export function measures(a, b, category) {
   if (!Number.isFinite(a) || !Number.isFinite(b) || a <= 0 || b <= 0)
     throw Error("Choose positive, finite measurements.");
