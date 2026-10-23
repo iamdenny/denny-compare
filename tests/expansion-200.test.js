@@ -4,7 +4,7 @@ import {comparisonExpansion} from '../src/comparison-expansion.js';
 import {categories,measures} from '../src/data.js';
 test('100 new sourced comparisons preserve positive, finite ratios',()=>{
  const count=c=>Object.values(c).reduce((n,x)=>n+x.items.length*(x.items.length-1)/2,0);
- assert.equal(count(comparisonExpansion),100);assert.equal(count(categories),202);
+ assert.equal(count(comparisonExpansion),100);assert.equal(count(categories),302);
  for(const [key,c] of Object.entries(comparisonExpansion)){
   assert.equal(c.items.length,5);assert.ok(c.source.startsWith('https://'));assert.ok(c.note.length>40);
   for(const a of c.items) for(const b of c.items){

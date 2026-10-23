@@ -212,3 +212,6 @@ export function measures(a, b, category) {
     bScale: (b / max) ** power,
   };
 }
+
+import { scienceComparisons } from "./science-comparisons.js";
+Object.assign(categories, scienceComparisons);

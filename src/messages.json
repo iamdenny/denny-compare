@@ -1438,5 +1438,185 @@
     "ko": "2026년 10월 23일 업데이트 · Denny Lim",
     "ja": "2026年10月23日更新 · Denny Lim",
     "es": "Actualizado el 23 de octubre de 2026 · Denny Lim"
+  },
+  "Force units": {
+    "en": "Force units",
+    "ko": "힘 단위",
+    "ja": "力の単位",
+    "es": "Unidades de fuerza"
+  },
+  "force": {
+    "en": "force",
+    "ko": "힘",
+    "ja": "力",
+    "es": "fuerza"
+  },
+  "Force is measured in newtons. One newton equals one kilogram metre per second squared. These bars compare force magnitudes, not pressure or mass.": {
+    "en": "Force is measured in newtons. One newton equals one kilogram metre per second squared. These bars compare force magnitudes, not pressure or mass.",
+    "ko": "힘은 뉴턴으로 측정합니다. 1뉴턴은 1킬로그램 미터 매 초 제곱입니다. 막대는 압력이나 질량이 아닌 힘의 크기를 비교합니다.",
+    "ja": "力はニュートンで測ります。1ニュートンは1キログラムメートル毎秒毎秒です。棒は圧力や質量ではなく力の大きさを比べます。",
+    "es": "La fuerza se mide en newtons. Un newton equivale a un kilogramo metro por segundo al cuadrado. Las barras comparan fuerza, no presión ni masa."
+  },
+  "Electric charge units": {
+    "en": "Electric charge units",
+    "ko": "전하 단위",
+    "ja": "電荷の単位",
+    "es": "Unidades de carga eléctrica"
+  },
+  "electric charge": {
+    "en": "electric charge",
+    "ko": "전하",
+    "ja": "電荷",
+    "es": "carga eléctrica"
+  },
+  "Electric charge is measured in coulombs. One coulomb equals one ampere second. A charge ratio alone does not describe battery energy.": {
+    "en": "Electric charge is measured in coulombs. One coulomb equals one ampere second. A charge ratio alone does not describe battery energy.",
+    "ko": "전하는 쿨롱으로 측정하며 1쿨롱은 1암페어 초입니다. 전하 비율만으로 배터리 에너지를 설명할 수는 없습니다.",
+    "ja": "電荷はクーロンで測り、1クーロンは1アンペア秒です。電荷の比だけでは電池のエネルギーを表せません。",
+    "es": "La carga se mide en culombios; uno equivale a un amperio segundo. La razón de carga por sí sola no describe la energía de una batería."
+  },
+  "Capacitance units": {
+    "en": "Capacitance units",
+    "ko": "정전 용량 단위",
+    "ja": "静電容量の単位",
+    "es": "Unidades de capacitancia"
+  },
+  "capacitance": {
+    "en": "capacitance",
+    "ko": "정전 용량",
+    "ja": "静電容量",
+    "es": "capacitancia"
+  },
+  "Capacitance is measured in farads. One farad equals one coulomb per volt. Compare component values while keeping their voltage ratings separate.": {
+    "en": "Capacitance is measured in farads. One farad equals one coulomb per volt. Compare component values while keeping their voltage ratings separate.",
+    "ko": "정전 용량은 패럿으로 측정하며 1패럿은 1볼트당 1쿨롱입니다. 부품의 용량을 비교하되 정격 전압은 별도로 확인하세요.",
+    "ja": "静電容量はファラドで測り、1ファラドは1ボルト当たり1クーロンです。容量の比較と定格電圧の確認は別に行います。",
+    "es": "La capacitancia se mide en faradios: un culombio por voltio. Compara capacidades y revisa por separado la tensión nominal."
+  },
+  "Inductance units": {
+    "en": "Inductance units",
+    "ko": "인덕턴스 단위",
+    "ja": "インダクタンスの単位",
+    "es": "Unidades de inductancia"
+  },
+  "inductance": {
+    "en": "inductance",
+    "ko": "인덕턴스",
+    "ja": "インダクタンス",
+    "es": "inductancia"
+  },
+  "Inductance is measured in henries. One henry equals one volt second per ampere. The comparison shows nominal inductance, not losses or frequency response.": {
+    "en": "Inductance is measured in henries. One henry equals one volt second per ampere. The comparison shows nominal inductance, not losses or frequency response.",
+    "ko": "인덕턴스는 헨리로 측정하며 1헨리는 1암페어당 1볼트 초입니다. 공칭 인덕턴스를 비교하며 손실이나 주파수 응답을 나타내지는 않습니다.",
+    "ja": "インダクタンスはヘンリーで測り、1ヘンリーは1アンペア当たり1ボルト秒です。公称値の比較であり、損失や周波数応答ではありません。",
+    "es": "La inductancia se mide en henrios: un voltio segundo por amperio. Se compara el valor nominal, no las pérdidas ni la respuesta en frecuencia."
+  },
+  "Conductance units": {
+    "en": "Conductance units",
+    "ko": "컨덕턴스 단위",
+    "ja": "コンダクタンスの単位",
+    "es": "Unidades de conductancia"
+  },
+  "conductance": {
+    "en": "conductance",
+    "ko": "컨덕턴스",
+    "ja": "コンダクタンス",
+    "es": "conductancia"
+  },
+  "Conductance is measured in siemens, the reciprocal of resistance in ohms. This compares conductance, not conductivity per unit length.": {
+    "en": "Conductance is measured in siemens, the reciprocal of resistance in ohms. This compares conductance, not conductivity per unit length.",
+    "ko": "컨덕턴스는 저항의 역수이며 지멘스로 측정합니다. 이 비교는 길이당 전도율이 아닌 컨덕턴스에 해당합니다.",
+    "ja": "コンダクタンスは抵抗の逆数で、ジーメンスで測ります。単位長さ当たりの導電率の比較ではありません。",
+    "es": "La conductancia se mide en siemens, el inverso de la resistencia en ohmios. No se compara la conductividad por unidad de longitud."
+  },
+  "Magnetic flux units": {
+    "en": "Magnetic flux units",
+    "ko": "자속 단위",
+    "ja": "磁束の単位",
+    "es": "Unidades de flujo magnético"
+  },
+  "magnetic flux": {
+    "en": "magnetic flux",
+    "ko": "자속",
+    "ja": "磁束",
+    "es": "flujo magnético"
+  },
+  "Magnetic flux is measured in webers. One weber equals one volt second. Flux is different from flux density, which is measured in teslas.": {
+    "en": "Magnetic flux is measured in webers. One weber equals one volt second. Flux is different from flux density, which is measured in teslas.",
+    "ko": "자속은 웨버로 측정하며 1웨버는 1볼트 초입니다. 테슬라로 측정하는 자속 밀도와 구분하세요.",
+    "ja": "磁束はウェーバで測り、1ウェーバは1ボルト秒です。テスラで測る磁束密度とは区別します。",
+    "es": "El flujo magnético se mide en webers: un voltio segundo. Es distinto de la densidad de flujo, medida en teslas."
+  },
+  "Magnetic flux density units": {
+    "en": "Magnetic flux density units",
+    "ko": "자속 밀도 단위",
+    "ja": "磁束密度の単位",
+    "es": "Unidades de densidad de flujo"
+  },
+  "magnetic flux density": {
+    "en": "magnetic flux density",
+    "ko": "자속 밀도",
+    "ja": "磁束密度",
+    "es": "densidad de flujo magnético"
+  },
+  "Magnetic flux density is measured in teslas. One tesla equals one weber per square metre. Values are unit references, not exposure recommendations.": {
+    "en": "Magnetic flux density is measured in teslas. One tesla equals one weber per square metre. Values are unit references, not exposure recommendations.",
+    "ko": "자속 밀도는 테슬라로 측정하며 1테슬라는 제곱미터당 1웨버입니다. 값은 단위 기준이며 노출 권고치가 아닙니다.",
+    "ja": "磁束密度はテスラで測り、1テスラは1平方メートル当たり1ウェーバです。値は単位の基準で、曝露の推奨値ではありません。",
+    "es": "La densidad de flujo se mide en teslas: un weber por metro cuadrado. Son referencias de unidades, no recomendaciones de exposición."
+  },
+  "Amount of substance units": {
+    "en": "Amount of substance units",
+    "ko": "물질량 단위",
+    "ja": "物質量の単位",
+    "es": "Unidades de cantidad de sustancia"
+  },
+  "amount of substance": {
+    "en": "amount of substance",
+    "ko": "물질량",
+    "ja": "物質量",
+    "es": "cantidad de sustancia"
+  },
+  "Amount of substance is measured in moles. One mole contains exactly 6.02214076 × 10²³ specified entities. Mass depends on which substance is counted.": {
+    "en": "Amount of substance is measured in moles. One mole contains exactly 6.02214076 × 10²³ specified entities. Mass depends on which substance is counted.",
+    "ko": "물질량은 몰로 측정합니다. 1몰에는 지정한 입자가 정확히 6.02214076 × 10²³개 있습니다. 질량은 물질의 종류에 따라 달라집니다.",
+    "ja": "物質量はモルで測ります。1モルには指定した粒子が正確に6.02214076 × 10²³個あります。質量は物質の種類によって変わります。",
+    "es": "La cantidad de sustancia se mide en moles. Un mol contiene exactamente 6.02214076 × 10²³ entidades especificadas. La masa depende de la sustancia."
+  },
+  "Luminous flux units": {
+    "en": "Luminous flux units",
+    "ko": "광속 단위",
+    "ja": "光束の単位",
+    "es": "Unidades de flujo luminoso"
+  },
+  "luminous flux": {
+    "en": "luminous flux",
+    "ko": "광속",
+    "ja": "光束",
+    "es": "flujo luminoso"
+  },
+  "Luminous flux is measured in lumens. One lumen equals one candela steradian. It describes light output; illuminance also depends on the illuminated area.": {
+    "en": "Luminous flux is measured in lumens. One lumen equals one candela steradian. It describes light output; illuminance also depends on the illuminated area.",
+    "ko": "광속은 루멘으로 측정하며 1루멘은 1칸델라 스테라디안입니다. 빛의 출력을 나타내며 조도는 비추는 면적에도 영향을 받습니다.",
+    "ja": "光束はルーメンで測り、1ルーメンは1カンデラステラジアンです。光の出力を表し、照度は照らす面積にも依存します。",
+    "es": "El flujo luminoso se mide en lúmenes: una candela estereorradián. Describe la salida de luz; la iluminancia también depende del área."
+  },
+  "Illuminance units": {
+    "en": "Illuminance units",
+    "ko": "조도 단위",
+    "ja": "照度の単位",
+    "es": "Unidades de iluminancia"
+  },
+  "illuminance": {
+    "en": "illuminance",
+    "ko": "조도",
+    "ja": "照度",
+    "es": "iluminancia"
+  },
+  "Illuminance is measured in lux. One lux equals one lumen per square metre. The comparison is a unit conversion, not a lighting design recommendation.": {
+    "en": "Illuminance is measured in lux. One lux equals one lumen per square metre. The comparison is a unit conversion, not a lighting design recommendation.",
+    "ko": "조도는 럭스로 측정하며 1럭스는 제곱미터당 1루멘입니다. 단위 변환 비교이며 조명 설계 권고치는 아닙니다.",
+    "ja": "照度はルクスで測り、1ルクスは1平方メートル当たり1ルーメンです。単位の換算比較であり、照明設計の推奨ではありません。",
+    "es": "La iluminancia se mide en lux: un lumen por metro cuadrado. Esta comparación convierte unidades y no recomienda un diseño de iluminación."
   }
 }
