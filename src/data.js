@@ -1,3 +1,4 @@
+import { comparisonExpansion } from "./comparison-expansion.js";
 // World Bank AG.SRF.TOTL.K2, 2024, retrieved 2026-10-22. Canada excluded pending source discrepancy review.
 export const categories = {
   area: {
@@ -198,6 +199,8 @@ Object.assign(categories, {
     "sourceLabel": "BIPM · SI Brochure"
   }
 });
+Object.assign(categories, comparisonExpansion);
+
 export function measures(a, b, category) {
   if (!Number.isFinite(a) || !Number.isFinite(b) || a <= 0 || b <= 0)
     throw Error("Choose positive, finite measurements.");

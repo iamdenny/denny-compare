@@ -1252,5 +1252,191 @@
     "ko": "1주",
     "ja": "1週間",
     "es": "1 semana"
+  },
+  "Frequency units": {
+    "en": "Frequency units",
+    "ko": "주파수 단위",
+    "ja": "周波数の単位",
+    "es": "Unidades de frecuencia"
+  },
+  "frequency": {
+    "en": "frequency",
+    "ko": "주파수",
+    "ja": "周波数",
+    "es": "frecuencia"
+  },
+  "Frequency counts cycles per second. The bar height shows a frequency ratio, not a wave shape; 1 Hz equals one cycle per second.": {
+    "en": "Frequency counts cycles per second. The bar height shows a frequency ratio, not a wave shape; 1 Hz equals one cycle per second.",
+    "ko": "주파수는 초당 주기 수입니다. 막대 높이는 주파수 비율이며 파형이 아닙니다. 1 Hz는 초당 한 주기입니다.",
+    "ja": "周波数は1秒あたりの周期数です。棒の高さは周波数の比であり波形ではありません。1 Hzは毎秒1周期です。",
+    "es": "La frecuencia cuenta ciclos por segundo. La altura indica su proporción, no una onda; 1 Hz equivale a un ciclo por segundo."
+  },
+  "Energy units": {
+    "en": "Energy units",
+    "ko": "에너지 단위",
+    "ja": "エネルギーの単位",
+    "es": "Unidades de energía"
+  },
+  "energy": {
+    "en": "energy",
+    "ko": "에너지",
+    "ja": "エネルギー",
+    "es": "energía"
+  },
+  "Energy is measured in joules. A watt-hour is 3600 joules because one watt is one joule per second and an hour has 3600 seconds. Energy and power are different quantities.": {
+    "en": "Energy is measured in joules. A watt-hour is 3600 joules because one watt is one joule per second and an hour has 3600 seconds. Energy and power are different quantities.",
+    "ko": "에너지는 줄로 측정합니다. 1 W는 초당 1 J이고 한 시간은 3600초이므로 1 Wh는 3600 J입니다. 에너지와 전력은 서로 다른 양입니다.",
+    "ja": "エネルギーの単位はジュールです。1 Wは毎秒1 J、1時間は3600秒なので1 Whは3600 Jです。エネルギーと電力は異なる量です。",
+    "es": "La energía se mide en julios. Un vatio-hora equivale a 3600 julios: un vatio es un julio por segundo y una hora tiene 3600 segundos. Energía y potencia son distintas."
+  },
+  "Power units": {
+    "en": "Power units",
+    "ko": "전력 단위",
+    "ja": "電力の単位",
+    "es": "Unidades de potencia"
+  },
+  "power": {
+    "en": "power",
+    "ko": "전력",
+    "ja": "電力",
+    "es": "potencia"
+  },
+  "Power is the rate of energy transfer. One watt means one joule per second. These ratios do not include operating time or electricity prices.": {
+    "en": "Power is the rate of energy transfer. One watt means one joule per second. These ratios do not include operating time or electricity prices.",
+    "ko": "전력은 에너지 전달률입니다. 1 W는 초당 1 J입니다. 이 비율에는 작동 시간이나 전기 요금이 포함되지 않습니다.",
+    "ja": "電力はエネルギーの移動率です。1 Wは毎秒1 Jです。稼働時間や電気料金はこの比に含まれません。",
+    "es": "La potencia es la tasa de transferencia de energía. Un vatio es un julio por segundo. Estas proporciones no incluyen tiempo de uso ni precios eléctricos."
+  },
+  "Pressure units": {
+    "en": "Pressure units",
+    "ko": "압력 단위",
+    "ja": "圧力の単位",
+    "es": "Unidades de presión"
+  },
+  "pressure": {
+    "en": "pressure",
+    "ko": "압력",
+    "ja": "圧力",
+    "es": "presión"
+  },
+  "One pascal is one newton per square metre. Prefixes change the scale only; this comparison does not convert between gauge and absolute pressure.": {
+    "en": "One pascal is one newton per square metre. Prefixes change the scale only; this comparison does not convert between gauge and absolute pressure.",
+    "ko": "1 Pa는 제곱미터당 1 N입니다. 접두어는 크기만 바꾸며, 게이지 압력과 절대 압력을 변환하지 않습니다.",
+    "ja": "1 Paは1平方メートルあたり1 Nです。接頭語は尺度だけを変え、ゲージ圧と絶対圧を換算するものではありません。",
+    "es": "Un pascal es un newton por metro cuadrado. Los prefijos solo cambian la escala; no se convierte entre presión relativa y absoluta."
+  },
+  "Electric current units": {
+    "en": "Electric current units",
+    "ko": "전류 단위",
+    "ja": "電流の単位",
+    "es": "Unidades de corriente"
+  },
+  "electric current": {
+    "en": "electric current",
+    "ko": "전류",
+    "ja": "電流",
+    "es": "corriente eléctrica"
+  },
+  "These are unit-scale comparisons of electric current, not equipment ratings or safety guidance. Micro means one millionth; milli means one thousandth.": {
+    "en": "These are unit-scale comparisons of electric current, not equipment ratings or safety guidance. Micro means one millionth; milli means one thousandth.",
+    "ko": "전류 단위의 크기를 비교하며 장비 정격이나 안전 지침이 아닙니다. 마이크로는 백만분의 일, 밀리는 천분의 일입니다.",
+    "ja": "電流の単位の尺度比較であり、機器の定格や安全指針ではありません。マイクロは100万分の1、ミリは1000分の1です。",
+    "es": "Son comparaciones de unidades de corriente, no valores nominales ni instrucciones de seguridad. Micro significa una millonésima y mili una milésima."
+  },
+  "Voltage units": {
+    "en": "Voltage units",
+    "ko": "전압 단위",
+    "ja": "電圧の単位",
+    "es": "Unidades de tensión"
+  },
+  "voltage": {
+    "en": "voltage",
+    "ko": "전압",
+    "ja": "電圧",
+    "es": "tensión"
+  },
+  "Voltage is electric potential difference. Prefix ratios do not describe current, stored energy, insulation requirements or safe contact limits.": {
+    "en": "Voltage is electric potential difference. Prefix ratios do not describe current, stored energy, insulation requirements or safe contact limits.",
+    "ko": "전압은 전위차입니다. 접두어 비율은 전류, 저장 에너지, 절연 요구 사항 또는 안전 접촉 한계를 나타내지 않습니다.",
+    "ja": "電圧は電位差です。接頭語の比は電流、蓄積エネルギー、絶縁要件、安全な接触限界を示しません。",
+    "es": "La tensión es una diferencia de potencial. Estas proporciones no indican corriente, energía almacenada, aislamiento ni límites de contacto seguro."
+  },
+  "Resistance units": {
+    "en": "Resistance units",
+    "ko": "저항 단위",
+    "ja": "抵抗の単位",
+    "es": "Unidades de resistencia"
+  },
+  "resistance": {
+    "en": "resistance",
+    "ko": "저항",
+    "ja": "抵抗",
+    "es": "resistencia"
+  },
+  "One ohm equals one volt per ampere. This compares unit magnitudes only, without resistor tolerance, temperature effects or circuit recommendations.": {
+    "en": "One ohm equals one volt per ampere. This compares unit magnitudes only, without resistor tolerance, temperature effects or circuit recommendations.",
+    "ko": "1 Ω는 1 V/A입니다. 단위 크기만 비교하며 저항 허용 오차, 온도 영향 또는 회로 권장 사항을 포함하지 않습니다.",
+    "ja": "1 Ωは1 V/Aです。単位の大きさだけを比較し、抵抗の公差、温度の影響、回路への推奨は含みません。",
+    "es": "Un ohmio equivale a un voltio por amperio. Solo se comparan unidades, sin tolerancias, efectos de temperatura ni recomendaciones de circuitos."
+  },
+  "Data storage units": {
+    "en": "Data storage units",
+    "ko": "데이터 용량 단위",
+    "ja": "データ容量の単位",
+    "es": "Unidades de almacenamiento"
+  },
+  "data size": {
+    "en": "data size",
+    "ko": "데이터 크기",
+    "ja": "データ量",
+    "es": "tamaño de datos"
+  },
+  "A byte contains eight bits. Decimal kB and MB use powers of 1000; binary KiB and MiB use powers of 1024. Storage size is not transfer speed.": {
+    "en": "A byte contains eight bits. Decimal kB and MB use powers of 1000; binary KiB and MiB use powers of 1024. Storage size is not transfer speed.",
+    "ko": "1바이트는 8비트입니다. 십진 kB와 MB는 1000의 거듭제곱, 이진 KiB와 MiB는 1024의 거듭제곱을 사용합니다. 용량은 전송 속도가 아닙니다.",
+    "ja": "1バイトは8ビットです。kBとMBは1000の累乗、KiBとMiBは1024の累乗です。容量は転送速度ではありません。",
+    "es": "Un byte contiene ocho bits. kB y MB usan potencias de 1000; KiB y MiB usan potencias de 1024. El tamaño no es velocidad de transferencia."
+  },
+  "Area units": {
+    "en": "Area units",
+    "ko": "넓이 단위",
+    "ja": "面積の単位",
+    "es": "Unidades de superficie"
+  },
+  "area": {
+    "en": "area",
+    "ko": "넓이",
+    "ja": "面積",
+    "es": "superficie"
+  },
+  "These bars encode area values with their heights, not square silhouettes. Squaring a length conversion also squares its factor: one square kilometre is one million square metres.": {
+    "en": "These bars encode area values with their heights, not square silhouettes. Squaring a length conversion also squares its factor: one square kilometre is one million square metres.",
+    "ko": "막대 높이로 넓이 값을 표시하며 정사각형 윤곽이 아닙니다. 길이 환산 계수를 제곱하면 넓이 계수가 됩니다. 1 km²는 100만 m²입니다.",
+    "ja": "棒の高さで面積を比較し、正方形の形は表しません。長さの換算係数を二乗すると面積の係数になります。1 km²は100万 m²です。",
+    "es": "Las alturas de las barras representan superficie, no siluetas cuadradas. El factor de longitud se eleva al cuadrado: un kilómetro cuadrado es un millón de metros cuadrados."
+  },
+  "Speed units": {
+    "en": "Speed units",
+    "ko": "속도 단위",
+    "ja": "速度の単位",
+    "es": "Unidades de velocidad"
+  },
+  "speed": {
+    "en": "speed",
+    "ko": "속도",
+    "ja": "速度",
+    "es": "velocidad"
+  },
+  "Speed is distance divided by elapsed time. One kilometre per hour is 1000/3600 metres per second. Displayed decimals are rounded; calculations use the underlying ratios.": {
+    "en": "Speed is distance divided by elapsed time. One kilometre per hour is 1000/3600 metres per second. Displayed decimals are rounded; calculations use the underlying ratios.",
+    "ko": "속도는 거리를 경과 시간으로 나눈 값입니다. 1 km/h는 1000/3600 m/s입니다. 표시 소수는 반올림하지만 계산은 원래 비율을 사용합니다.",
+    "ja": "速度は距離を経過時間で割った値です。1 km/hは1000/3600 m/sです。表示値は丸めていますが計算は元の比を使います。",
+    "es": "La velocidad es distancia entre tiempo transcurrido. Un km/h equivale a 1000/3600 m/s. Se redondea la visualización; el cálculo usa las proporciones originales."
+  },
+  "Updated 23 October 2026 · Denny Lim": {
+    "en": "Updated 23 October 2026 · Denny Lim",
+    "ko": "2026년 10월 23일 업데이트 · Denny Lim",
+    "ja": "2026年10月23日更新 · Denny Lim",
+    "es": "Actualizado el 23 de octubre de 2026 · Denny Lim"
   }
 }

@@ -60,7 +60,7 @@ function draw() {
         $("#custom").value !== ""
           ? ["custom", t("Custom reference"), Number($("#custom").value)]
           : preset;
-    if (b[2] > 1e9 || b[2] < 0.001)
+    if ($("#custom").value !== "" && (b[2] > 1e9 || b[2] < 0.001))
       throw Error(t("Custom values must be between 0.001 and 1,000,000,000."));
     const m = measures(a[2], b[2], category),
       overlay = $("#layout").value === "overlay",
