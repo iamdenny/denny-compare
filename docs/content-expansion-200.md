@@ -1,4 +1,13 @@
+---
+title: "Content expansion — 23 October 2026"
+summary: "Historical release record; consult operations for the current implementation"
+read_when:
+  - Maintaining this service or reviewing its implementation
+---
+
 # Content expansion — 23 October 2026
+
+> Historical record: counts, layouts and provider observations below describe that release. See [current operations](operations.md) for the reviewed implementation and outstanding verification.
 
 10 unit categories × 10 pair comparisons. Categories: frequency, energy, power, pressure, current, voltage, resistance, storage, area units and speed. Sources: BIPM SI Brochure and NIST binary prefixes. Small preset values remain usable while custom-input limits remain intact.
 
